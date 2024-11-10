@@ -23,12 +23,7 @@ const NavBar = ({ toggleSidebar }: { toggleSidebar: () => void }) => {
               height={30}
               alt="Picture of the author"
             />
-            <Image
-              src="/logoText.svg"
-              width={100}
-              height={100}
-              alt="Picture of the author"
-            />
+            <span className="text-2xl font-bold">SmartCall.ai</span>
           </div>
         </div>
         <div className="mr-2 flex items-center">

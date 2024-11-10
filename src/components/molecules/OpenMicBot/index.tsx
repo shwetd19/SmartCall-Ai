@@ -116,7 +116,7 @@ const OpenMicBot = () => {
     <div className="grid h-screen w-full grid-flow-col grid-cols-4 gap-2">
       <div className="col-span-4 mr-4 mt-20 space-y-4 rounded-lg p-4">
         <CardHeader className="flex flex-row items-center justify-between space-y-0 rounded-lg border bg-white">
-          <CardTitle className="text-2xl font-bold">OpenMic Bot</CardTitle>
+          <CardTitle className="text-2xl font-bold">SmartCall Bot</CardTitle>
 
           <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
             <DialogTrigger asChild>
@@ -178,6 +178,10 @@ const OpenMicBot = () => {
                 </div>
               </div>
             </div>
+            <div className="rounded-md bg-black p-2 text-center text-white">
+              Simply enter the system prompt as provided for our voice agent,
+              save it, then click on 'Test Call' and input your phone number.
+            </div>
             <TabsContent value="basics" className="p-4">
               <div className="space-y-4 rounded-lg border bg-[#FAFAFA] p-2">
                 <h3 className="">System Prompt</h3>
@@ -189,7 +193,7 @@ const OpenMicBot = () => {
                 ) : (
                   <Textarea
                     placeholder="Your job is to collect the user's email address. Ask the user for his email address."
-                    className="min-h-[300px] bg-white"
+                    className="min-h-[250px] bg-white"
                     value={systemPrompt}
                     onChange={(e) => setSystemPrompt(e.target.value)}
                     disabled={!isEditing}
