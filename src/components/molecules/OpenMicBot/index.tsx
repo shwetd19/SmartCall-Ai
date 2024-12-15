@@ -180,7 +180,7 @@ const OpenMicBot = () => {
             </div>
             <div className="rounded-md bg-black p-2 text-center text-white">
               Simply enter the system prompt as provided for our voice agent,
-              save it, then click on 'Test Call' and input your phone number.
+              save it, then click on Test Call and input your phone number.
             </div>
             <TabsContent value="basics" className="p-4">
               <div className="space-y-4 rounded-lg border bg-[#FAFAFA] p-2">
