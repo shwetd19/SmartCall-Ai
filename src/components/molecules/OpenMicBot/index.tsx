@@ -192,7 +192,7 @@ const OpenMicBot = () => {
                   </div>
                 ) : (
                   <Textarea
-                    placeholder="Your job is to collect the user's email address. Ask the user for his email address."
+                    placeholder="Your job is to collect the users email address. Ask the user for his email address."
                     className="min-h-[250px] bg-white"
                     value={systemPrompt}
                     onChange={(e) => setSystemPrompt(e.target.value)}
